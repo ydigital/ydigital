@@ -3589,6 +3589,10 @@ footer {
   right: 40px;
   cursor: pointer; }
 
+@media screen and (max-width: 768px) {
+  .menu-wrapper {
+    min-width: 200px; } }
+
 img {
   max-width: 100%;
   vertical-align: middle; }
