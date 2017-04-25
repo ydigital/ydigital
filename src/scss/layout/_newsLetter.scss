@@ -1,0 +1,47 @@
+section#newsletter {
+	padding-top: 6em;
+	padding-bottom: 6em;
+	color: #000;
+	background-color: #f3f2f2;
+}
+
+.nws {
+	text-align: center;
+
+	.nws-title {
+
+		margin-bottom: 3em;
+
+		h2 {
+			margin-bottom: 5px;
+			margin-top: 0;
+			font-size: 2em;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: 14px;
+			margin: 0;
+			font-weight: 300;
+		}
+	}
+
+	.btn-cta-yellow {
+		color: #fff;
+	}
+
+	.btn-cta {
+		padding: 10px 20px;
+	}
+
+	.btn {
+		i {
+			font-size: 1.5em;
+		}
+	}
+}
+
+.field-one-line {
+	display: flex;
+}

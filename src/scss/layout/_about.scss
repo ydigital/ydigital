@@ -1,0 +1,35 @@
+section#about {
+	color: #000;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	text-align: center;
+
+	.btn-cta {
+		min-width: 200px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+.about-title {
+
+	h2 {
+		font-size: 2.5em;
+	}
+}
+
+.about-desc {
+	
+	p {
+		font-size: 1.5em;
+		font-weight: 300;
+
+		span {
+			border-bottom: 2px solid $btnYellowColor;
+		}
+	}
+}
+
+.about-cta {
+	margin-top: 5em;
+}

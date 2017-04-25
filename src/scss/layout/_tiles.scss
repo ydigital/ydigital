@@ -1,0 +1,147 @@
+.fact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 250px;
+	text-align: center;
+	position: relative;
+
+	&.fact-1 {
+		background-image: url($root + '/image/room.png');
+
+		&::before {
+			content: ' ';
+			top: 0;
+			left: 0;
+			opacity: .8;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to right,#f3f1ee,#f3f1ee);
+			z-index: 1;
+		}
+	}
+
+	&.fact-2 {
+		background-image: url($root + '/image/line.png');
+
+		&::before {
+			content: ' ';
+			top: 0;
+			left: 0;
+			opacity: .8;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to right,#2a272e,#2d212a);
+			z-index: 1;
+		}
+	}
+
+	&.fact-3 {
+		background-image: url($root + '/image/cafe.png');
+
+		&::before {
+			content: ' ';
+			top: 0;
+			left: 0;
+			opacity: .8;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to right,#212b26,#212b26);
+			z-index: 1;
+		}
+	}
+
+	&.fact-4 {
+		background-image: url($root + '/image/dart.png');
+
+		&::before {
+			content: ' ';
+			top: 0;
+			left: 0;
+			opacity: .8;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to right,#fbcb31,#faed40);
+			z-index: 1;
+		}
+	}
+
+	&.fact-5 {
+		background-image: url($root + '/image/hand.png');
+
+		&::before {
+			content: ' ';
+			top: 0;
+			left: 0;
+			opacity: .8;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to right,#f3f1ee,#f3f1ee);
+			z-index: 1;
+		}
+	}
+
+	&.fact-6 {
+		background-image: url($root + '/image/coffee.png');
+
+		&::before {
+			content: ' ';
+			top: 0;
+			left: 0;
+			opacity: .8;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(to right,#fbc63c,#ee902f);
+			z-index: 1;
+		}
+	}
+
+	.fact-text {
+		z-index: 2;
+		position: relative;
+
+		&.fact-text-dark {
+			color: #000;
+		}
+	}
+
+	.fact-number {
+		z-index: 2;
+		position: relative;
+
+		&.fact-number-white {
+			color: #fff;
+		}
+	}
+}
+
+.tiles-2 {
+	.fact-number {
+		color: $tilesColor;
+		font-size: 4em;
+	}	
+	.fact-text {
+		font-size: 2em;
+	}
+}
+
+.tiles-4 {
+	.fact-number {
+		color: $tilesColor;
+		font-size: 2.5em;
+	}	
+	.fact-text {
+		font-size: 1em;
+	}
+}
+
+
+
