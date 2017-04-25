@@ -722,8 +722,8 @@ html {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("http://localhost:3000/font/font-awesome//fontawesome-webfont.eot?v=4.7.0");
-  src: url("http://localhost:3000/font/font-awesome//fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("http://localhost:3000/font/font-awesome//fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("http://localhost:3000/font/font-awesome//fontawesome-webfont.woff?v=4.7.0") format("woff"), url("http://localhost:3000/font/font-awesome//fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("http://localhost:3000/font/font-awesome//fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.eot?v=4.7.0");
+  src: url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2994,7 +2994,7 @@ header {
 #home-slide {
   height: 100vh;
   background-size: cover;
-  background-image: url("http://localhost:3000/image/home-slider.jpg");
+  background-image: url("https://pure-sierra-23077.herokuapp.com/image/home-slider.jpg");
   background-position: center;
   background-repeat: no-repeat; }
 
@@ -3042,7 +3042,7 @@ header {
   text-align: center;
   position: relative; }
   .fact.fact-1 {
-    background-image: url("http://localhost:3000/image/room.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/room.png"); }
     .fact.fact-1::before {
       content: ' ';
       top: 0;
@@ -3055,7 +3055,7 @@ header {
       background-image: linear-gradient(to right, #f3f1ee, #f3f1ee);
       z-index: 1; }
   .fact.fact-2 {
-    background-image: url("http://localhost:3000/image/line.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/line.png"); }
     .fact.fact-2::before {
       content: ' ';
       top: 0;
@@ -3068,7 +3068,7 @@ header {
       background-image: linear-gradient(to right, #2a272e, #2d212a);
       z-index: 1; }
   .fact.fact-3 {
-    background-image: url("http://localhost:3000/image/cafe.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/cafe.png"); }
     .fact.fact-3::before {
       content: ' ';
       top: 0;
@@ -3081,7 +3081,7 @@ header {
       background-image: linear-gradient(to right, #212b26, #212b26);
       z-index: 1; }
   .fact.fact-4 {
-    background-image: url("http://localhost:3000/image/dart.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/dart.png"); }
     .fact.fact-4::before {
       content: ' ';
       top: 0;
@@ -3094,7 +3094,7 @@ header {
       background-image: linear-gradient(to right, #fbcb31, #faed40);
       z-index: 1; }
   .fact.fact-5 {
-    background-image: url("http://localhost:3000/image/hand.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/hand.png"); }
     .fact.fact-5::before {
       content: ' ';
       top: 0;
@@ -3107,7 +3107,7 @@ header {
       background-image: linear-gradient(to right, #f3f1ee, #f3f1ee);
       z-index: 1; }
   .fact.fact-6 {
-    background-image: url("http://localhost:3000/image/coffee.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/coffee.png"); }
     .fact.fact-6::before {
       content: ' ';
       top: 0;
@@ -3229,7 +3229,7 @@ section#news {
   padding: 40px 25px;
   position: relative; }
   .news-box.news-1 {
-    background-image: url("http://localhost:3000/image/worker.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/worker.png"); }
     .news-box.news-1::before {
       content: ' ';
       top: 0;
@@ -3242,7 +3242,7 @@ section#news {
       background-image: linear-gradient(to right, #9bab62, #487725);
       z-index: 1; }
   .news-box.news-2 {
-    background-image: url("http://localhost:3000/image/migme.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/migme.png"); }
     .news-box.news-2::before {
       content: ' ';
       top: 0;
@@ -3255,7 +3255,7 @@ section#news {
       background-image: linear-gradient(to right, #b2a64d, #b56553);
       z-index: 1; }
   .news-box.news-3 {
-    background-image: url("http://localhost:3000/image/library.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/library.png"); }
     .news-box.news-3::before {
       content: ' ';
       top: 0;
@@ -3268,7 +3268,7 @@ section#news {
       background-image: linear-gradient(to right, #8d771e, #46317c);
       z-index: 1; }
   .news-box.news-4 {
-    background-image: url("http://localhost:3000/image/library.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/library.png"); }
     .news-box.news-4::before {
       content: ' ';
       top: 0;
@@ -3281,7 +3281,7 @@ section#news {
       background-image: linear-gradient(to right, #94821f, #358795);
       z-index: 1; }
   .news-box.news-5 {
-    background-image: url("http://localhost:3000/image/library.png"); }
+    background-image: url("https://pure-sierra-23077.herokuapp.com/image/library.png"); }
     .news-box.news-5::before {
       content: ' ';
       top: 0;
@@ -3355,7 +3355,7 @@ section#random-content {
   padding-right: 8em; }
 
 .random-content-left {
-  background-image: url("http://localhost:3000/image/girl-in-dark.png");
+  background-image: url("https://pure-sierra-23077.herokuapp.com/image/girl-in-dark.png");
   position: relative; }
   .random-content-left::before {
     content: ' ';
@@ -3370,7 +3370,7 @@ section#random-content {
     z-index: 1; }
 
 .random-content-right {
-  background-image: url("http://localhost:3000/image/people.png"); }
+  background-image: url("https://pure-sierra-23077.herokuapp.com/image/people.png"); }
 
 .the-content-left {
   padding-top: 10px;
@@ -3797,7 +3797,7 @@ select.form-control:focus::-ms-value {
   font-weight: 300; }
 
 .form-with-bg-pattern {
-  background-image: url("http://localhost:3000/image/pattern.png"); }
+  background-image: url("https://pure-sierra-23077.herokuapp.com/image/pattern.png"); }
 
 .form-input {
   padding-top: 15px;
