@@ -35,3 +35,19 @@
 	cursor: pointer;
 	margin-top: 5em;
 }
+
+@media screen and (max-width: 768px){
+	.hero-text-container {
+		h2.headline {
+			font-size: 1.5em;
+		}	
+		p.hero-text {
+			font-size: 1em;
+			line-height: 1;
+		}
+	}
+
+	.arrow-lego {
+		margin-top: 2em;
+	}
+}
