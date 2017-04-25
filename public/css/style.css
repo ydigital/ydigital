@@ -2987,6 +2987,10 @@ header {
     -webkit-filter: grayscale(0);
             filter: grayscale(0); }
 
+@media screen and (max-width: 768px) {
+  .cta-box {
+    display: none; } }
+
 #home-slide {
   height: 100vh;
   background-size: cover;
@@ -3162,6 +3166,10 @@ section#about {
 .about-cta {
   margin-top: 5em; }
 
+@media screen and (max-width: 768px) {
+  .about-cta a {
+    margin-bottom: 20px; } }
+
 section#service {
   color: #000;
   padding-top: 3em;
@@ -3206,6 +3214,10 @@ section#service {
       background-color: #fff;
       position: absolute;
       bottom: -10px; }
+
+@media screen and (max-width: 768px) {
+  .box-service {
+    margin-bottom: 20px; } }
 
 section#news {
   padding-top: 3em;
@@ -3315,6 +3327,12 @@ section#news {
   font-size: 1.5em;
   margin-top: 10px; }
 
+@media screen and (max-width: 768px) {
+  .news-col-3 {
+    margin-top: 0; }
+  .news-box {
+    margin-bottom: 20px; } }
+
 section#random-content {
   padding-top: 3em; }
   section#random-content .btn-cta {
@@ -3383,6 +3401,10 @@ section#random-content {
   position: relative;
   z-index: 2; }
 
+@media screen and (max-width: 768px) {
+  .the-content-left-title h4 {
+    font-size: 2em; } }
+
 section#newsletter {
   padding-top: 6em;
   padding-bottom: 6em;
@@ -3414,6 +3436,13 @@ section#newsletter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+@media screen and (max-width: 768px) {
+  section#newsletter .fx-6 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%; } }
 
 footer {
   padding-top: 2.5em;
@@ -3463,6 +3492,32 @@ footer {
 .footer-cta .btn-cta-transparent {
   border: 2px solid #000;
   font-weight: 900; }
+
+@media screen and (max-width: 768px) {
+  footer .col-fx {
+    display: block; }
+  footer .fx-4, footer .fx-6 {
+    max-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .cpy-right {
+    text-align: center; }
+  .footer-menu {
+    margin-bottom: 1em;
+    text-align: center; }
+  .bottom-footer-menu {
+    margin-bottom: 1em;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer-menu ul li:not(.parent) {
+    display: none; }
+  .about-footer-text {
+    text-align: center; }
+  .footer-logo {
+    margin: 0 auto; } }
 
 .menu-wrapper {
   position: fixed;

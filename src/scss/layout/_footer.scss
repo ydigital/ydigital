@@ -70,3 +70,41 @@ footer {
 		font-weight: 900;
 	}
 }
+
+@media screen and (max-width: 768px){
+	footer{
+		.col-fx {
+			display: block;
+		}
+		.fx-4, .fx-6 {
+			max-width: 100%;
+			flex: 1;
+		}
+
+	}
+	.cpy-right {
+		text-align: center;
+	}
+	.footer-menu {
+		margin-bottom: 1em;
+		text-align: center;
+	}
+	.bottom-footer-menu {
+		margin-bottom: 1em;
+		text-align: center;
+		justify-content: center;
+	}
+	.footer-menu {
+		ul {
+			li:not(.parent) {
+				display: none;
+			}
+		}
+	}
+	.about-footer-text {
+		text-align: center;
+	}
+	.footer-logo {
+		margin: 0 auto;
+	}
+}

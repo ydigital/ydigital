@@ -136,3 +136,12 @@ section#news {
 	font-size: 1.5em;
 	margin-top: 10px;
 }
+
+@media screen and (max-width: 768px){
+	.news-col-3 {
+		margin-top: 0;
+	}
+	.news-box {
+		margin-bottom: 20px;
+	}
+}

@@ -45,3 +45,12 @@ section#newsletter {
 .field-one-line {
 	display: flex;
 }
+
+@media screen and (max-width: 768px){
+	section#newsletter {
+		.fx-6 {
+			flex: 1;
+			max-width: 100%;
+		}
+	}
+}

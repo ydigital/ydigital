@@ -33,3 +33,11 @@ section#about {
 .about-cta {
 	margin-top: 5em;
 }
+
+@media screen and (max-width: 768px){
+	.about-cta {
+		a {
+			margin-bottom: 20px;
+		}
+	}
+}

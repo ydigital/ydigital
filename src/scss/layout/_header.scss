@@ -64,3 +64,9 @@ header {
 		filter: grayscale(0);
 	}
 }
+
+@media screen and (max-width: 768px){
+	.cta-box {
+		display: none;
+	}
+}
