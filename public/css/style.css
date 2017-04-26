@@ -3153,6 +3153,10 @@ header {
 .tiles-4 .fact-text {
   font-size: 1em; }
 
+@media screen and (max-width: 578px) {
+  section#tiles .col-fx {
+    display: block; } }
+
 section#about {
   color: #000;
   padding-top: 3em;
