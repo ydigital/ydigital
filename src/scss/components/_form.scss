@@ -159,6 +159,27 @@ select.form-control:focus::-ms-value {
   font-weight: 300;
 }
 
+.input-contact::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $formContactColorPlaceholder;
+  font-style: normal;
+  font-weight: 300; 
+}
+.input-contact::-moz-placeholder { /* Firefox 19+ */
+  color: $formContactColorPlaceholder;
+  font-style: normal;
+  font-weight: 300;
+}
+.input-contact:-ms-input-placeholder { /* IE 10+ */
+  color: $formContactColorPlaceholder;
+  font-style: normal;
+  font-weight: 300;
+}
+.input-contact:-moz-placeholder { /* Firefox 18- */
+  color: $formContactColorPlaceholder;
+  font-style: normal;
+  font-weight: 300;
+}
+
 .form-with-bg-pattern {
 	background-image: url($root + '/image/pattern.png');
 }
@@ -167,3 +188,38 @@ select.form-control:focus::-ms-value {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+
+.form-group {
+    margin-bottom: 1rem
+}
+
+.select-with-custom-arrow {
+    position: relative;
+
+    .the-arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 42px;
+        height: 42px;
+        background-color: #000;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            color: #fff;
+            font-size: 1em;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

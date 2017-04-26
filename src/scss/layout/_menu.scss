@@ -8,7 +8,7 @@
 	top: 0;
 	right: 0;
 	transform: translateX(101%);
-	transition: all .5s cubic-bezier(1,.07,.68,.9);
+	transition: all .5s cubic-bezier(.8,.09,.51,.97);
 	overflow: hidden;
 
 	&.menu-wrapper-show {
@@ -20,16 +20,17 @@
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0,0,0,.7);
+	background-color: transparent;
 	top: 0;
 	left: 0;
-	z-index: -1;
+	z-index: 9997;
 	opacity: 0;
 	transition: all .5s cubic-bezier(1,.07,.68,.9);
+	transform: translateX(100%);
 
 	&.__overlay-show {
 		opacity: 1;
-		z-index: 9997;
+		transform: translateX(0);
 	}
 }
 
@@ -84,5 +85,16 @@
 @media screen and (max-width: 768px){
 	.menu-wrapper {
 		min-width: 200px;
+	}
+	.menu-container {
+		nav {
+			ul {
+				li {
+					a {
+						font-size: 1.2em;
+					}
+				}
+			}
+		}
 	}
 }

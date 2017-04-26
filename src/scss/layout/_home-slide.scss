@@ -1,9 +1,12 @@
-#home-slide {
+.slide-banner-full-width {
 	height: 100vh;
 	background-size: cover;
-	background-image: url($root + '/image/home-slider.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+#home-slide {
+	background-image: url($root + '/image/home-slider.jpg');
 }
 
 .hero-text-container {
@@ -18,12 +21,16 @@
 		text-transform: uppercase;;
 		color: #fff;
 		font-size: 2em;
+		z-index: 2;
+		position: relative;
 	}
 
 	p.hero-text {
 		margin: 0px;
 		font-size: 1.3em;
 		line-height: 1.5;
+		z-index: 2;
+		position: relative;
 	}
 
 	p.hero-text.yellow {
@@ -34,6 +41,59 @@
 .arrow-lego {
 	cursor: pointer;
 	margin-top: 5em;
+	z-index: 2;
+	position: relative;
+}
+
+.slide-with-gradient {
+	position: relative;
+}
+
+.banner-container {
+	z-index: 2;
+	position: relative;
+	height: 100vh;
+	display: flex;
+	align-items:  center;
+
+	.banner-text {
+		h2 {
+			font-size: 3em;
+		}
+		p {
+			font-size: 2em;
+			margin-top: 4em;
+			> span {
+				color: $btnYellowColor;
+			}
+		}
+	}
+}
+
+h2.with-half-border-bottom {
+	text-transform: uppercase;
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: -25px;
+		left: 0;
+		width: 50px;
+		height: 5px;
+	}
+
+	&.border-bottom-yellow {
+		&:before {
+			background-color: $btnYellowColor;
+		}
+	}
+
+	&.border-bottom-white {
+		&:before {
+			background-color: #fff;
+		}
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -49,5 +109,19 @@
 
 	.arrow-lego {
 		margin-top: 2em;
+	}
+
+	.banner-container {
+		.banner-text {
+		h2 {
+				font-size: 2em;
+			}
+			p {
+				font-size: 1.5em;
+				> span {
+					color: $btnYellowColor;
+				}
+			}
+		}
 	}
 }

@@ -722,8 +722,8 @@ html {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("http://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.eot?v=4.7.0");
+  src: url("http://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("http://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("http://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.woff?v=4.7.0") format("woff"), url("http://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("http://pure-sierra-23077.herokuapp.com/font/font-awesome//fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -2991,12 +2991,14 @@ header {
   .cta-box {
     display: none; } }
 
-#home-slide {
+.slide-banner-full-width {
   height: 100vh;
   background-size: cover;
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/home-slider.jpg");
   background-position: center;
   background-repeat: no-repeat; }
+
+#home-slide {
+  background-image: url("http://pure-sierra-23077.herokuapp.com/image/home-slider.jpg"); }
 
 .hero-text-container {
   display: -webkit-box;
@@ -3014,17 +3016,59 @@ header {
   .hero-text-container h2.headline {
     text-transform: uppercase;
     color: #fff;
-    font-size: 2em; }
+    font-size: 2em;
+    z-index: 2;
+    position: relative; }
   .hero-text-container p.hero-text {
     margin: 0px;
     font-size: 1.3em;
-    line-height: 1.5; }
+    line-height: 1.5;
+    z-index: 2;
+    position: relative; }
   .hero-text-container p.hero-text.yellow {
     color: #faec27; }
 
 .arrow-lego {
   cursor: pointer;
-  margin-top: 5em; }
+  margin-top: 5em;
+  z-index: 2;
+  position: relative; }
+
+.slide-with-gradient {
+  position: relative; }
+
+.banner-container {
+  z-index: 2;
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .banner-container .banner-text h2 {
+    font-size: 3em; }
+  .banner-container .banner-text p {
+    font-size: 2em;
+    margin-top: 4em; }
+    .banner-container .banner-text p > span {
+      color: #faec27; }
+
+h2.with-half-border-bottom {
+  text-transform: uppercase;
+  position: relative; }
+  h2.with-half-border-bottom:before {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 50px;
+    height: 5px; }
+  h2.with-half-border-bottom.border-bottom-yellow:before {
+    background-color: #faec27; }
+  h2.with-half-border-bottom.border-bottom-white:before {
+    background-color: #fff; }
 
 @media screen and (max-width: 768px) {
   .hero-text-container h2.headline {
@@ -3033,7 +3077,13 @@ header {
     font-size: 1em;
     line-height: 1; }
   .arrow-lego {
-    margin-top: 2em; } }
+    margin-top: 2em; }
+  .banner-container .banner-text h2 {
+    font-size: 2em; }
+  .banner-container .banner-text p {
+    font-size: 1.5em; }
+    .banner-container .banner-text p > span {
+      color: #faec27; } }
 
 .fact {
   display: -webkit-box;
@@ -3051,7 +3101,7 @@ header {
   text-align: center;
   position: relative; }
   .fact.fact-1 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/room.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/room.png"); }
     .fact.fact-1::before {
       content: ' ';
       top: 0;
@@ -3064,7 +3114,7 @@ header {
       background-image: linear-gradient(to right, #f3f1ee, #f3f1ee);
       z-index: 1; }
   .fact.fact-2 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/line.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/line.png"); }
     .fact.fact-2::before {
       content: ' ';
       top: 0;
@@ -3077,7 +3127,7 @@ header {
       background-image: linear-gradient(to right, #2a272e, #2d212a);
       z-index: 1; }
   .fact.fact-3 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/cafe.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/cafe.png"); }
     .fact.fact-3::before {
       content: ' ';
       top: 0;
@@ -3090,7 +3140,7 @@ header {
       background-image: linear-gradient(to right, #212b26, #212b26);
       z-index: 1; }
   .fact.fact-4 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/dart.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/dart.png"); }
     .fact.fact-4::before {
       content: ' ';
       top: 0;
@@ -3103,7 +3153,7 @@ header {
       background-image: linear-gradient(to right, #fbcb31, #faed40);
       z-index: 1; }
   .fact.fact-5 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/hand.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/hand.png"); }
     .fact.fact-5::before {
       content: ' ';
       top: 0;
@@ -3116,7 +3166,7 @@ header {
       background-image: linear-gradient(to right, #f3f1ee, #f3f1ee);
       z-index: 1; }
   .fact.fact-6 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/coffee.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/coffee.png"); }
     .fact.fact-6::before {
       content: ' ';
       top: 0;
@@ -3242,7 +3292,7 @@ section#news {
   padding: 40px 25px;
   position: relative; }
   .news-box.news-1 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/worker.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/worker.png"); }
     .news-box.news-1::before {
       content: ' ';
       top: 0;
@@ -3255,7 +3305,7 @@ section#news {
       background-image: linear-gradient(to right, #9bab62, #487725);
       z-index: 1; }
   .news-box.news-2 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/migme.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/migme.png"); }
     .news-box.news-2::before {
       content: ' ';
       top: 0;
@@ -3268,7 +3318,7 @@ section#news {
       background-image: linear-gradient(to right, #b2a64d, #b56553);
       z-index: 1; }
   .news-box.news-3 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/library.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/library.png"); }
     .news-box.news-3::before {
       content: ' ';
       top: 0;
@@ -3281,7 +3331,7 @@ section#news {
       background-image: linear-gradient(to right, #8d771e, #46317c);
       z-index: 1; }
   .news-box.news-4 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/library.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/library.png"); }
     .news-box.news-4::before {
       content: ' ';
       top: 0;
@@ -3294,7 +3344,7 @@ section#news {
       background-image: linear-gradient(to right, #94821f, #358795);
       z-index: 1; }
   .news-box.news-5 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/library.png"); }
+    background-image: url("http://pure-sierra-23077.herokuapp.com/image/library.png"); }
     .news-box.news-5::before {
       content: ' ';
       top: 0;
@@ -3346,10 +3396,8 @@ section#news {
   .news-box {
     margin-bottom: 20px; } }
 
-section#random-content {
-  padding-top: 3em; }
-  section#random-content .btn-cta {
-    width: 200px; }
+section#random-content .btn-cta {
+  width: 200px; }
 
 .random-content-left, .random-content-right {
   background-repeat: no-repeat;
@@ -3368,9 +3416,9 @@ section#random-content {
   padding-right: 8em; }
 
 .random-content-left {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/girl-in-dark.png");
+  background-image: url("http://pure-sierra-23077.herokuapp.com/image/girl-in-dark.png");
   position: relative; }
-  .random-content-left::before {
+  .random-content-left.bg-with-gradient::before {
     content: ' ';
     top: 0;
     left: 0;
@@ -3383,7 +3431,7 @@ section#random-content {
     z-index: 1; }
 
 .random-content-right {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/people.png"); }
+  background-image: url("http://pure-sierra-23077.herokuapp.com/image/people.png"); }
 
 .the-content-left {
   padding-top: 10px;
@@ -3543,8 +3591,8 @@ footer {
   right: 0;
   -webkit-transform: translateX(101%);
           transform: translateX(101%);
-  -webkit-transition: all 0.5s cubic-bezier(1, 0.07, 0.68, 0.9);
-  transition: all 0.5s cubic-bezier(1, 0.07, 0.68, 0.9);
+  -webkit-transition: all 0.5s cubic-bezier(0.8, 0.09, 0.51, 0.97);
+  transition: all 0.5s cubic-bezier(0.8, 0.09, 0.51, 0.97);
   overflow: hidden; }
   .menu-wrapper.menu-wrapper-show {
     -webkit-transform: translateX(0);
@@ -3554,16 +3602,19 @@ footer {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: transparent;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 9997;
   opacity: 0;
   -webkit-transition: all 0.5s cubic-bezier(1, 0.07, 0.68, 0.9);
-  transition: all 0.5s cubic-bezier(1, 0.07, 0.68, 0.9); }
+  transition: all 0.5s cubic-bezier(1, 0.07, 0.68, 0.9);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%); }
   .__overlay.__overlay-show {
     opacity: 1;
-    z-index: 9997; }
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
 
 .menu-container {
   width: 80%;
@@ -3604,7 +3655,9 @@ footer {
 
 @media screen and (max-width: 768px) {
   .menu-wrapper {
-    min-width: 200px; } }
+    min-width: 200px; }
+  .menu-container nav ul li a {
+    font-size: 1.2em; } }
 
 img {
   max-width: 100%;
@@ -3809,9 +3862,214 @@ select.form-control:focus::-ms-value {
   font-style: italic;
   font-weight: 300; }
 
+.input-contact::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #747471 !important;
+  font-style: normal;
+  font-weight: 300; }
+
+.input-contact::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #747471 !important;
+  font-style: normal;
+  font-weight: 300; }
+
+.input-contact:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #747471 !important;
+  font-style: normal;
+  font-weight: 300; }
+
+.input-contact:-moz-placeholder {
+  /* Firefox 18- */
+  color: #747471 !important;
+  font-style: normal;
+  font-weight: 300; }
+
 .form-with-bg-pattern {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/pattern.png"); }
+  background-image: url("http://pure-sierra-23077.herokuapp.com/image/pattern.png"); }
 
 .form-input {
   padding-top: 15px;
   padding-bottom: 15px; }
+
+.form-group {
+  margin-bottom: 1rem; }
+
+.select-with-custom-arrow {
+  position: relative; }
+  .select-with-custom-arrow .the-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background-color: #000;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .select-with-custom-arrow .the-arrow i {
+      color: #fff;
+      font-size: 1em; }
+
+section#service-slide {
+  background-image: url("http://pure-sierra-23077.herokuapp.com/image/service-banner.jpg"); }
+  section#service-slide.slide-with-gradient:before {
+    content: ' ';
+    top: 0;
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(left, #18525f, #61773d);
+    background-image: linear-gradient(to right, #18525f, #61773d);
+    z-index: 1; }
+
+section.ordinary-bg-nothing {
+  color: #000;
+  padding-top: 3em;
+  padding-bottom: 3em; }
+
+section#service-all h3 {
+  font-size: 2.3em; }
+
+section#service-all p.__p {
+  font-weight: 300; }
+
+.service-full-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 300px;
+  padding: 0 6.5em;
+  padding-top: 7em;
+  overflow: hidden;
+  margin-bottom: 25px; }
+  .service-full-box.service-full-box-bg-yellow {
+    background-color: #faec27; }
+  .service-full-box.service-full-box-bg-orange {
+    background-color: #fccb6d; }
+  .service-full-box.service-full-box-bg-pastel {
+    background-color: #efded0; }
+  .service-full-box .service-full-box-title {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+    .service-full-box .service-full-box-title h2 {
+      color: #fff;
+      font-size: 2.5em;
+      margin-top: 0; }
+  .service-full-box .service-full-box-desc {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2; }
+    .service-full-box .service-full-box-desc p {
+      color: #000;
+      font-size: 1.1em;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-top: 0; }
+  .service-full-box .service-full-box-cta {
+    text-align: right; }
+    .service-full-box .service-full-box-cta .btn-cta {
+      width: 200px; }
+
+@media screen and (max-width: 576px) {
+  section#service-all .col-fx {
+    display: block; }
+  section#service-all .fx-4, section#service-all .fx-8 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%; }
+  .service-full-box {
+    display: block;
+    padding: 2em 1.5em;
+    height: auto; }
+    .service-full-box .service-full-box-cta .btn-cta {
+      width: auto; }
+  section#service-slide .fx-6 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%; } }
+
+section#contact-slide-form {
+  background-image: url("http://pure-sierra-23077.herokuapp.com/image/contact-bg.jpg"); }
+  section#contact-slide-form.slide-with-gradient:before {
+    content: ' ';
+    top: 0;
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(left, #18525f, #61773d);
+    background-image: linear-gradient(to right, #18525f, #61773d);
+    z-index: 1; }
+  section#contact-slide-form .banner-container .banner-text p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    font-weight: 300; }
+
+.contact-info ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 4em;
+  list-style: none; }
+  .contact-info ul li {
+    margin-bottom: 7px;
+    font-size: 1em;
+    font-weight: 300; }
+    .contact-info ul li a {
+      font-size: 1em;
+      font-weight: 300; }
+      .contact-info ul li a:hover {
+        text-decoration: underline; }
+
+.form-wrapper {
+  position: relative;
+  z-index: 2; }
+
+.form-contact .form-input {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.form-contact .form-group {
+  margin-bottom: 7px; }
+
+.form-contact textarea {
+  height: 120px; }
+
+.form-contact input.input-contact, .form-contact textarea.input-contact {
+  text-transform: uppercase;
+  font-size: 13px; }
+
+.form-contact select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  height: auto !important;
+  text-transform: uppercase;
+  font-size: 13px; }
+
+@media screen and (max-width: 571px) {
+  section#contact-slide-form {
+    height: auto; }
+    section#contact-slide-form .col-fx {
+      display: block;
+      margin-top: 10em; }
+    section#contact-slide-form .banner-container {
+      height: auto;
+      margin-bottom: 3em; }
+  .form-contact {
+    margin-bottom: 3em; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3Mvc3R5bGUuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
