@@ -1,0 +1,165 @@
+body.career-page {
+	.ordinary-bg-nothing {
+		h2 {
+			font-size: 2em;
+			padding-right: 5em;
+		}
+		p {
+			font-weight: 300;
+		}
+	}
+	section.all-content-center {
+		background-image: url($root + '/image/bg-career-ready.jpg');
+
+		h2 {
+			font-size: 2.5em;
+		}
+		p {
+			font-weight: 300;
+			line-height: 1.5;
+			margin-top: 4em;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	body.career-page{
+		.ordinary-bg-nothing {
+			h2 {
+				padding-right: 0;
+			}
+		}	
+	} 
+}
+
+@media screen and (max-width: 576px){
+	body.career-page {
+		section.all-content-center {
+			.fx-8 {
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+section#career-form-section {
+	padding-top: 4.5em;
+	padding-bottom: 4.5em;
+	h2 {
+		margin-top: 0;
+	}
+	.form-input {
+		border: 1px solid #000;
+	}
+	.accordion {
+		padding-right: 4em;
+	}
+	.form-career {
+		select {
+			-webkit-appearance: none;
+		    -webkit-border-radius: 0px;
+		    height: auto !important;
+		    text-transform: uppercase;
+		    font-size: 13px;
+		}
+		input:not[type="submit"] {
+			
+		}
+		.form-group {
+			margin-bottom: 10px;
+		}
+
+		.select-with-custom-arrow {
+			.the-arrow {
+				height: 47px;
+				width: 47px;
+			}
+		}
+
+		.custom-file-control {
+			height: auto;
+			border-radius: 0;
+			border: 1px solid #000;
+		}
+
+		.custom-file-input {
+			
+
+		}
+		.custom-file {
+			width: 100%;
+
+		}
+		.custom-file-control::before {
+			top: 0;
+			right: 0;
+			height: auto;
+			background-color: #000;
+			border-radius: 0;
+			border: none;
+			color: #fff;
+			padding-top: 12px;
+		}
+		.custom-file-control:lang(en)::before {
+			font: normal normal normal 14px/1 FontAwesome;
+			content: "\F093";
+		}
+		.custom-file-control:lang(en)::after {
+			content: "Upload CV (Pdf, doc | max size 5mb)";
+		}
+		.btn-cta {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 576px){
+	section#career-form-section{
+		.accordion {
+			padding-right: 0;
+		}
+		.form-career {
+			.btn-cta {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.__text-bottom {
+	margin-top: 5em;
+	a {
+		color: #000;
+		text-decoration: underline;
+	}
+}
+
+section#career-slide{
+	background-image: url($root + '/image/bg-career.png');
+
+	.fx-6 {
+		max-width: 100%;
+	}
+
+	&.slide-with-gradient:before {
+		content: ' ';
+	    top: 0;
+	    left: 0;
+	    opacity: .8;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background-image: linear-gradient(to right, #3d161c, #867023);
+	    z-index: 1;
+	}
+
+	.banner-container {
+		.banner-text {
+			p {
+				font-size: 1.1em;
+			    line-height: 1.5;
+			    font-weight: 300;
+			}
+		}
+	}	
+}

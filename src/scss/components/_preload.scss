@@ -1,0 +1,36 @@
+.preload {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	background-color: #fff;
+	transform: translateY(0);
+	transition: all .5s cubic-bezier(.8,.09,.51,.97);
+
+	&.hide {
+		transform: translateY(-100%);
+	}
+
+	.preload-circle {
+		border: 12px solid #f3f3f3;
+		border-radius: 50%;
+		border-top: 12px solid $btnYellowColor;
+		width: 100px;
+		height: 100px;
+		animation: spincircle 2s linear infinite;
+	}
+
+	@keyframes spincircle {
+		0%{
+			transform: rotate(0deg);
+		}
+		100%{
+			transform: rotate(360deg);
+		}
+	}
+}

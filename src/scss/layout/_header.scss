@@ -25,6 +25,14 @@ header {
 	}
 }
 
+@media screen and (max-width: 576px){
+	header {
+		.logo {
+			width: 135px;
+		}
+	}
+}
+
 #gnb_svg {
 	cursor: pointer;
 }

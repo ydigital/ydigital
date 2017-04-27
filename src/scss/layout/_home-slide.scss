@@ -96,6 +96,11 @@ h2.with-half-border-bottom {
 	}
 }
 
+.bg-cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 768px){
 	.hero-text-container {
 		h2.headline {
@@ -105,6 +110,8 @@ h2.with-half-border-bottom {
 			font-size: 1em;
 			line-height: 1;
 		}
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.arrow-lego {

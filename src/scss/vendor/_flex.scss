@@ -944,4 +944,14 @@ html {
   margin-left: 91.666667%;
 }
 
+.flex-force {
+  display: flex !important;
+}
+
+@media screen and (max-width: 576px){
+  .col-fx {
+    display: block;
+  }
+}
+
 /* END FRAMEWORK */

@@ -1,0 +1,17 @@
+section.all-content-center {
+	text-align: center;
+
+	h2 {
+		&.with-half-border-bottom {
+			&:before {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}		
+	}
+}
+
+section.with-bg {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
