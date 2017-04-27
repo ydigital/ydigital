@@ -1,5 +1,5 @@
 var express = require("express");
-var logger = require('morgan');
+// var logger = require('morgan');
 
 var app = express();
 // app.use(logger('dev'));
@@ -28,5 +28,3 @@ app.use((req, res, next) => {
 	res.status(404);
 	res.sendFile(__dirname + '/public/404.html');
 })
-
-module.exports = app;
