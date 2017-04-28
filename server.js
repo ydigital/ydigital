@@ -24,7 +24,11 @@ app.get('/career', function (req, res) {
 	res.sendFile(__dirname + '/public/career.html');
 })
 
+app.get('/memahami-digital-marketing-dengan-mudah', function(req, res) {
+	res.sendFile(__dirname + '/public/news-detail.html');
+})
+
 app.use((req, res, next) => {
 	res.status(404);
 	res.sendFile(__dirname + '/public/404.html');
-})
+}) 

@@ -26,7 +26,7 @@ window.onload = function(){
 		TweenMax.from(document.body, 1, {opacity:'0'})
 		TweenMax.to(document.body, 1, {opacity:'1'})
 		preload.classList.add('hide');
-	}, 1000);
+	}, 500);
 }
 
 menu.onclick = function(){
@@ -100,6 +100,23 @@ for(var i = 0;i < accordionItem.length; ++i){
 		var accordioContent = this.querySelector('.accordion-content-container');
 		accordioContent.classList.toggle('accordion-open');
 		accordionArrow.classList.toggle('accordion-arrow-open');
+	});
+}
+
+
+var tabList = document.querySelectorAll('.tab-list');
+var cat = document.querySelectorAll('.cat');
+
+for(var i=0;i<tabList.length;++i){
+	tabList[i].addEventListener('click', function(){
+		removeAllClass('.tab-list', 'active-tab');
+		for(var i=0;i<cat.length;++i){
+			cat[i].style.display = 'none';
+		}
+		this.classList.add('active-tab');
+		var id = this.getAttribute('id');
+		var postCatActive = document.querySelector('.' + id + '-cat');
+		postCatActive.style.display = 'block';
 	});
 }
 
