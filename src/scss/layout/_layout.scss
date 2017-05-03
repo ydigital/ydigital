@@ -24,3 +24,21 @@ a.anchor-cover {
 	height: 100%;
 	z-index: 2;
 }
+
+section.overflow-bottom {
+	margin-bottom: -8em;
+}
+
+section.overflow-top {
+	margin-top: -7em;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.middle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

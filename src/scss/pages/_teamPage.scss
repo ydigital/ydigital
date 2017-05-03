@@ -1,0 +1,347 @@
+section#about-slide {
+	background-image: url($root + '/image/about-bg.png');
+
+	&.slide-with-gradient:before {
+		content: ' ';
+	    top: 0;
+	    left: 0;
+	    opacity: .8;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background-image: linear-gradient(to right, #4b2363, #6a502c);
+	    z-index: 1;
+	}
+}
+
+.row{
+	width: 35px;
+	height: 5px;
+	margin-bottom: 2em;
+
+	&.yellow {
+		background-color: $textColor;
+	}
+	&.white {
+		background-color: #fff;
+	}
+}
+
+.team-box {
+	position: relative;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 1.9em;
+	cursor: pointer;
+
+	&:hover {
+		animation: move-bottom-arrow 1s linear infinite;
+	}
+
+	&.team-box-big {
+		min-height: 300px;
+	}
+
+	&.team-box-small {
+		min-height: 180px;
+		background-color: #f4f5f4;
+
+		.the-name {
+			p {
+				font-size: 13px;
+				text-transform: none;
+			}
+		}
+
+		.team-content {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	.team-content {
+		position: absolute;
+		bottom: 20px;
+		width: 100%;
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.team-name {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+
+	.the-name {
+		p {
+			margin: 0;
+			text-transform: uppercase;
+			font-weight: 900;
+			line-height: 1.4;
+		}
+	}
+	.team-close {
+		color: #fff;
+		font-size: 2em;
+		cursor: pointer;
+	}
+}
+
+#management1 {
+	background-image: url($root + '/image/boye.png');
+}
+
+#management2 {
+	background-image: url($root + '/image/peter.png');
+}
+
+#management3 {
+	background-image: url($root + '/image/fred.png');
+}
+
+#management4 {
+	background-image: url($root + '/image/yudha.png');
+}
+
+#management5 {
+	background-image: url($root + '/image/ibeth.png');
+}
+
+#management6 {
+	background-image: url($root + '/image/michael.png');
+}
+
+@keyframes move-bottom-arrow {
+	0% {
+		transform: translateY(0px);
+	} 25% {
+		transform: translateY(5px);
+	} 50% {
+		transform: translateY(10px);
+	} 75% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+section#rockstar {
+	background-image: url($root + '/image/rockstar.png');
+
+	h2 {
+		color: $textColor;
+		font-size: 3em;
+	}
+
+	p {
+		font-weight: 300;
+		line-height: 1.4;
+
+		> span {
+			color: $textColor;
+		}
+	}
+
+	.col-fx {
+		min-height: 500px;
+	}
+}
+
+section#boo {
+	background-image: url($root + '/image/boo.png');
+
+	h2 {
+		color: #000;
+		font-size: 3em;
+	}
+
+	p {
+		font-weight: 300;
+		line-height: 1.4;
+		color: #000;
+
+		> span {
+			color: $textColor;
+		}
+	}
+
+	.col-fx {
+		min-height: 300px;
+	}	
+}
+
+section#activity {
+	h4 {
+		font-size: 2em;
+		margin: 0;
+		margin-bottom: 40px;
+	}
+
+	.activity-box {
+		min-height: 160px;
+		background-size: cover;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		margin-bottom: 1.9em;
+
+		p {
+			font-size: 1.5em;
+			margin: 0;
+			font-weight: 300;
+			color: #fff;
+			margin-bottom: 15px;
+		}
+		.row {
+			margin: 0;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+#activity1 {
+	background-image: url($root + '/image/trips.png');
+}
+
+#activity2 {
+	background-image: url($root + '/image/fitness.png');
+}
+
+#activity3 {
+	background-image: url($root + '/image/futsal.png');
+}
+
+#activity4{
+	background-image: url($root + '/image/work-home.png');
+}
+
+#activity5 {
+	background-image: url($root + '/image/training.png');
+}
+
+#activity6 {
+	background-image: url($root + '/image/hangout.png');
+}
+
+section#instagram {
+	padding-bottom: 0;
+	h4 {
+		font-size: 2em;
+	    margin: 0;
+	    margin-bottom: 40px;
+	}
+	.ig-thum {
+		height: 192px;
+		width: 12.5%;
+		background-color: #f4f5f4;
+		border: 1px solid #eee;
+		float: left;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 992px){
+	section#staff {
+		.fx-2 {
+			flex: 0 0 25%;
+			max-width: 25%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	section#management {
+		.col-fx {
+			display: block;
+		}
+		.fx-4 {
+			max-width: 100%;
+		}
+	}
+	section#staff {
+		.fx-2 {
+			flex: 0 0 33.333333%;
+			max-width: 33.333333%;
+		}
+	}
+	section#instagram {
+		.ig-thum {
+			width: 16.666667%;
+		}
+	}
+}
+
+@media screen and (max-width: 576px){
+	section#staff {
+		.col-fx {
+			display: flex;
+		}
+	}
+	section#about-slide {
+		.fx-6 {
+			max-width: 100%;
+		}
+	}
+	section#activity {
+		.fx-8 {
+			max-width: 100%;
+		}
+		.fx-4 {
+			max-width: 100%;	
+		} 
+		.activity-box {
+			margin-bottom: 1em;
+		}
+	}
+	.team-box {
+		margin-bottom: 1em;
+	}
+	section#rockstar {
+		.col-fx {
+			display: flex;
+		}
+		.fx {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+	section#instagram {
+		.ig-thum {
+			width: 25%;
+		}
+	}
+}
+
+@media screen and (max-width: 476px){
+	section#staff {
+		.fx-2 {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+	}
+	section#instagram {
+		.ig-thum {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 350px){
+	section#staff {
+		.fx-2 {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+
+
+
+
+

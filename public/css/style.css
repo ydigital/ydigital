@@ -731,8 +731,8 @@ html {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("https://pure-sierra-23077.herokuapp.com/font/font-awesome/fontawesome-webfont.eot?v=4.7.0");
-  src: url("https://pure-sierra-23077.herokuapp.com/font/font-awesome/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("https://pure-sierra-23077.herokuapp.com/font/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("http://localhost:3000/font/font-awesome/fontawesome-webfont.eot?v=4.7.0");
+  src: url("http://localhost:3000/font/font-awesome/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("http://localhost:3000/font/font-awesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("http://localhost:3000/font/font-awesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("http://localhost:3000/font/font-awesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("http://localhost:3000/font/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -3011,7 +3011,7 @@ header {
   background-repeat: no-repeat; }
 
 #home-slide {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/home-slider.jpg"); }
+  background-image: url("http://localhost:3000/image/home-slider.jpg"); }
 
 .hero-text-container {
   display: -webkit-box;
@@ -3121,7 +3121,7 @@ h2.with-half-border-bottom {
   text-align: center;
   position: relative; }
   .fact.fact-1 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/room.png"); }
+    background-image: url("http://localhost:3000/image/room.png"); }
     .fact.fact-1::before {
       content: ' ';
       top: 0;
@@ -3134,7 +3134,7 @@ h2.with-half-border-bottom {
       background-image: linear-gradient(to right, #f3f1ee, #f3f1ee);
       z-index: 1; }
   .fact.fact-2 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/line.png"); }
+    background-image: url("http://localhost:3000/image/line.png"); }
     .fact.fact-2::before {
       content: ' ';
       top: 0;
@@ -3147,7 +3147,7 @@ h2.with-half-border-bottom {
       background-image: linear-gradient(to right, #2a272e, #2d212a);
       z-index: 1; }
   .fact.fact-3 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/cafe.png"); }
+    background-image: url("http://localhost:3000/image/cafe.png"); }
     .fact.fact-3::before {
       content: ' ';
       top: 0;
@@ -3160,7 +3160,7 @@ h2.with-half-border-bottom {
       background-image: linear-gradient(to right, #212b26, #212b26);
       z-index: 1; }
   .fact.fact-4 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/dart.png"); }
+    background-image: url("http://localhost:3000/image/dart.png"); }
     .fact.fact-4::before {
       content: ' ';
       top: 0;
@@ -3173,7 +3173,7 @@ h2.with-half-border-bottom {
       background-image: linear-gradient(to right, #fbcb31, #faed40);
       z-index: 1; }
   .fact.fact-5 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/hand.png"); }
+    background-image: url("http://localhost:3000/image/hand.png"); }
     .fact.fact-5::before {
       content: ' ';
       top: 0;
@@ -3186,7 +3186,7 @@ h2.with-half-border-bottom {
       background-image: linear-gradient(to right, #f3f1ee, #f3f1ee);
       z-index: 1; }
   .fact.fact-6 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/coffee.png"); }
+    background-image: url("http://localhost:3000/image/coffee.png"); }
     .fact.fact-6::before {
       content: ' ';
       top: 0;
@@ -3316,7 +3316,7 @@ section#news {
   padding: 40px 25px;
   position: relative; }
   .news-box.news-1 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/worker.png"); }
+    background-image: url("http://localhost:3000/image/worker.png"); }
     .news-box.news-1::before {
       content: ' ';
       top: 0;
@@ -3329,7 +3329,7 @@ section#news {
       background-image: linear-gradient(to right, #9bab62, #487725);
       z-index: 1; }
   .news-box.news-2 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/migme.png"); }
+    background-image: url("http://localhost:3000/image/migme.png"); }
     .news-box.news-2::before {
       content: ' ';
       top: 0;
@@ -3342,7 +3342,7 @@ section#news {
       background-image: linear-gradient(to right, #b2a64d, #b56553);
       z-index: 1; }
   .news-box.news-3 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/library.png"); }
+    background-image: url("http://localhost:3000/image/library.png"); }
     .news-box.news-3::before {
       content: ' ';
       top: 0;
@@ -3355,7 +3355,7 @@ section#news {
       background-image: linear-gradient(to right, #8d771e, #46317c);
       z-index: 1; }
   .news-box.news-4 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/library.png"); }
+    background-image: url("http://localhost:3000/image/library.png"); }
     .news-box.news-4::before {
       content: ' ';
       top: 0;
@@ -3368,7 +3368,7 @@ section#news {
       background-image: linear-gradient(to right, #94821f, #358795);
       z-index: 1; }
   .news-box.news-5 {
-    background-image: url("https://pure-sierra-23077.herokuapp.com/image/library.png"); }
+    background-image: url("http://localhost:3000/image/library.png"); }
     .news-box.news-5::before {
       content: ' ';
       top: 0;
@@ -3476,7 +3476,7 @@ section#random-content .btn-cta {
   padding-right: 8em; }
 
 .random-content-left {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/girl-in-dark.png");
+  background-image: url("http://localhost:3000/image/girl-in-dark.png");
   position: relative; }
   .random-content-left.bg-with-gradient::before {
     content: ' ';
@@ -3491,7 +3491,7 @@ section#random-content .btn-cta {
     z-index: 1; }
 
 .random-content-right {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/people.png"); }
+  background-image: url("http://localhost:3000/image/people.png"); }
 
 .the-content-left {
   padding-top: 10px;
@@ -3738,6 +3738,26 @@ a.anchor-cover {
   height: 100%;
   z-index: 2; }
 
+section.overflow-bottom {
+  margin-bottom: -8em; }
+
+section.overflow-top {
+  margin-top: -7em; }
+
+.text-center {
+  text-align: center; }
+
+.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 img {
   max-width: 100%;
   vertical-align: middle; }
@@ -3966,7 +3986,7 @@ select.form-control:focus::-ms-value {
   font-weight: 300; }
 
 .form-with-bg-pattern {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/pattern.png"); }
+  background-image: url("http://localhost:3000/image/pattern.png"); }
 
 .form-input {
   padding-top: 15px;
@@ -4156,7 +4176,7 @@ select.form-control:focus::-ms-value {
             transform: rotate(360deg); } }
 
 section#service-slide {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/service-banner.jpg"); }
+  background-image: url("http://localhost:3000/image/service-banner.jpg"); }
   section#service-slide.slide-with-gradient:before {
     content: ' ';
     top: 0;
@@ -4239,7 +4259,7 @@ section#service-all p.__p {
     max-width: 100%; } }
 
 section#contact-slide-form {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/contact-bg.jpg"); }
+  background-image: url("http://localhost:3000/image/contact-bg.jpg"); }
   section#contact-slide-form.slide-with-gradient:before {
     content: ' ';
     top: 0;
@@ -4321,7 +4341,7 @@ body.career-page .ordinary-bg-nothing p {
   font-weight: 300; }
 
 body.career-page section.all-content-center {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/bg-career-ready.jpg"); }
+  background-image: url("http://localhost:3000/image/bg-career-ready.jpg"); }
   body.career-page section.all-content-center h2 {
     font-size: 2.5em; }
   body.career-page section.all-content-center p {
@@ -4393,7 +4413,7 @@ section#career-form-section {
     text-decoration: underline; }
 
 section#career-slide {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/bg-career.png"); }
+  background-image: url("http://localhost:3000/image/bg-career.png"); }
   section#career-slide .fx-6 {
     max-width: 100%; }
   section#career-slide.slide-with-gradient:before {
@@ -4413,7 +4433,7 @@ section#career-slide {
     font-weight: 300; }
 
 section#news-detail-slide {
-  background-image: url("https://pure-sierra-23077.herokuapp.com/image/worker.png"); }
+  background-image: url("http://localhost:3000/image/worker.png"); }
   section#news-detail-slide.news-detail-banner {
     max-height: 400px;
     background-size: cover;
@@ -4670,5 +4690,274 @@ section#related-post {
   .related-content-list {
     display: block;
     margin-bottom: 5em; } }
+
+section#about-slide {
+  background-image: url("http://localhost:3000/image/about-bg.png"); }
+  section#about-slide.slide-with-gradient:before {
+    content: ' ';
+    top: 0;
+    left: 0;
+    opacity: .8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(left, #4b2363, #6a502c);
+    background-image: linear-gradient(to right, #4b2363, #6a502c);
+    z-index: 1; }
+
+.row {
+  width: 35px;
+  height: 5px;
+  margin-bottom: 2em; }
+  .row.yellow {
+    background-color: #faec27; }
+  .row.white {
+    background-color: #fff; }
+
+.team-box {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1.9em;
+  cursor: pointer; }
+  .team-box:hover {
+    -webkit-animation: move-bottom-arrow 1s linear infinite;
+            animation: move-bottom-arrow 1s linear infinite; }
+  .team-box.team-box-big {
+    min-height: 300px; }
+  .team-box.team-box-small {
+    min-height: 180px;
+    background-color: #f4f5f4; }
+    .team-box.team-box-small .the-name p {
+      font-size: 13px;
+      text-transform: none; }
+    .team-box.team-box-small .team-content {
+      padding-left: 10px;
+      padding-right: 10px; }
+  .team-box .team-content {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px; }
+  .team-box .team-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .team-box .the-name p {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.4; }
+  .team-box .team-close {
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer; }
+
+#management1 {
+  background-image: url("http://localhost:3000/image/boye.png"); }
+
+#management2 {
+  background-image: url("http://localhost:3000/image/peter.png"); }
+
+#management3 {
+  background-image: url("http://localhost:3000/image/fred.png"); }
+
+#management4 {
+  background-image: url("http://localhost:3000/image/yudha.png"); }
+
+#management5 {
+  background-image: url("http://localhost:3000/image/ibeth.png"); }
+
+#management6 {
+  background-image: url("http://localhost:3000/image/michael.png"); }
+
+@-webkit-keyframes move-bottom-arrow {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  25% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  75% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+@keyframes move-bottom-arrow {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  25% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  75% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
+
+section#rockstar {
+  background-image: url("http://localhost:3000/image/rockstar.png"); }
+  section#rockstar h2 {
+    color: #faec27;
+    font-size: 3em; }
+  section#rockstar p {
+    font-weight: 300;
+    line-height: 1.4; }
+    section#rockstar p > span {
+      color: #faec27; }
+  section#rockstar .col-fx {
+    min-height: 500px; }
+
+section#boo {
+  background-image: url("http://localhost:3000/image/boo.png"); }
+  section#boo h2 {
+    color: #000;
+    font-size: 3em; }
+  section#boo p {
+    font-weight: 300;
+    line-height: 1.4;
+    color: #000; }
+    section#boo p > span {
+      color: #faec27; }
+  section#boo .col-fx {
+    min-height: 300px; }
+
+section#activity h4 {
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 40px; }
+
+section#activity .activity-box {
+  min-height: 160px;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-bottom: 1.9em; }
+  section#activity .activity-box p {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 15px; }
+  section#activity .activity-box .row {
+    margin: 0;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+#activity1 {
+  background-image: url("http://localhost:3000/image/trips.png"); }
+
+#activity2 {
+  background-image: url("http://localhost:3000/image/fitness.png"); }
+
+#activity3 {
+  background-image: url("http://localhost:3000/image/futsal.png"); }
+
+#activity4 {
+  background-image: url("http://localhost:3000/image/work-home.png"); }
+
+#activity5 {
+  background-image: url("http://localhost:3000/image/training.png"); }
+
+#activity6 {
+  background-image: url("http://localhost:3000/image/hangout.png"); }
+
+section#instagram {
+  padding-bottom: 0; }
+  section#instagram h4 {
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 40px; }
+  section#instagram .ig-thum {
+    height: 192px;
+    width: 12.5%;
+    background-color: #f4f5f4;
+    border: 1px solid #eee;
+    float: left;
+    cursor: pointer; }
+
+@media screen and (max-width: 992px) {
+  section#staff .fx-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%; } }
+
+@media screen and (max-width: 768px) {
+  section#management .col-fx {
+    display: block; }
+  section#management .fx-4 {
+    max-width: 100%; }
+  section#staff .fx-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  section#instagram .ig-thum {
+    width: 16.666667%; } }
+
+@media screen and (max-width: 576px) {
+  section#staff .col-fx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  section#about-slide .fx-6 {
+    max-width: 100%; }
+  section#activity .fx-8 {
+    max-width: 100%; }
+  section#activity .fx-4 {
+    max-width: 100%; }
+  section#activity .activity-box {
+    margin-bottom: 1em; }
+  .team-box {
+    margin-bottom: 1em; }
+  section#rockstar .col-fx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  section#rockstar .fx {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; }
+  section#instagram .ig-thum {
+    width: 25%; } }
+
+@media screen and (max-width: 476px) {
+  section#staff .fx-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%; }
+  section#instagram .ig-thum {
+    width: 50%; } }
+
+@media screen and (max-width: 350px) {
+  section#staff .fx-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%; } }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3Mvc3R5bGUuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
