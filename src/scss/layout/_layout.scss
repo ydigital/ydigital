@@ -44,9 +44,25 @@ section.overflow-top {
 }
 
 h3.h-with-bg-yellow {
-	background-color: $textColor;
 	padding: 5px 10px;
 	display: table;
+	border: 2px solid $textColor;
+}
+
+.no-mt {
+	margin-top: 0;
+}
+
+.white-bg {
+	background-color: #fff;
+}
+
+.text-normal {
+	font-weight: 300;
+}
+
+.cblue {
+	color: $textBlue;
 }
 
 

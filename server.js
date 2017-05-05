@@ -32,6 +32,10 @@ app.get('/team', function(req, res){
 	res.sendFile(__dirname + '/public/team.html');
 })
 
+app.get('/technology', function(req, res){
+	res.sendFile(__dirname + '/public/technology.html');
+})
+
 app.use((req, res, next) => {
 	res.status(404);
 	res.sendFile(__dirname + '/public/404.html');
