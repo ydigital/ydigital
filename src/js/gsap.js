@@ -121,9 +121,18 @@ for(var i=0;i<tabList.length;++i){
 }
 
 
+var teamBoxBig = document.querySelectorAll('.team-box-big');
 
-
-
+for(var i = 0;i < teamBoxBig.length; ++i){
+	teamBoxBig[i].addEventListener('click', function(){
+		if(!this.classList.contains('expanded')){
+			removeAllClass('.team-box-big','expanded');
+			this.classList.add('expanded');
+		} else {
+			this.classList.remove('expanded');
+		}
+	});
+}
 
 
 // GSAP

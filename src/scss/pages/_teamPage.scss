@@ -245,6 +245,113 @@ section#instagram {
 	}
 }
 
+
+
+.team-box-detail-container {
+	display: flex;
+	margin-bottom: 8em;
+}
+
+.team-box-detail-name {
+	flex: 1;
+}
+
+.team-box-detail-desc {
+	flex: 2;
+	margin-top: 16px;
+
+	p {
+		line-height: 1.4;
+		font-size: 1.2em;
+	}
+}
+
+.team-box-detail {
+	position: relative;
+	z-index: 3;
+	width: 77vw;
+	border-top: 2px solid transparent;
+	overflow: hidden;
+	max-height: 0;
+	transition: all .3s ease-in;
+	opacity: 0;
+}
+
+._detail-position {
+	display: flex;
+}
+
+._detail-name {
+	h3 {
+		text-transform: uppercase;
+		font-size: 2em;
+		margin-bottom: 20px;
+	}
+}
+
+._position {
+	margin-right: 20px;
+	p {
+		font-size: 1.3em;
+		font-style: italic;
+		margin: 0;
+	}
+}
+
+._linkedin {
+	padding-left: 22px;
+	border-left: 2px solid #000;
+	a {
+		background-color: $linkedinBgColor;
+		color: #fff;
+		font-size: 1.3em;
+		padding: 2px 5px;
+	}
+}
+
+.gnb_svg_close_team1, .gnb_svg_close_team2 {
+	transition: all .3s ease-in;
+	width: 14px;
+}
+
+.gnb_svg_close_team2 {
+	transform: matrix(-0.7071, -0.7071, 0.7071, -0.7071, 14.8284, 22.1421);
+}
+
+._will-yellow {
+	fill: #fff;
+}
+
+.team-box-big {
+	&.expanded {
+		.gnb_svg_close_team1 {
+			width: 24px;
+		}
+		.gnb_svg_close_team2 {
+			width: 24px;
+			y: -4;
+			transform: matrix(-0.7071, -0.7071, 0.7071, -0.7071, 29.8284, 22.1421)
+		}
+		._will-yellow {
+			fill: $textColor;
+		}
+		+ .team-box-detail {
+			max-height: 600px;
+			border-top: 2px solid $textColor;
+			opacity: 1;
+		}
+	}
+}
+
+section#management {
+	.fx-4:nth-of-type(3n+2) .team-box-detail {
+		margin-left: -26.5vw;
+	}
+	.fx-4:nth-of-type(3n+3) .team-box-detail {
+		margin-left: -53vw;
+	}
+}
+
 @media screen and (max-width: 992px){
 	section#staff {
 		.fx-2 {
@@ -273,6 +380,18 @@ section#instagram {
 		.ig-thum {
 			width: 16.666667%;
 		}
+	}
+
+	.team-box-detail-container {
+		display: block;
+	}
+
+	.team-box-detail {
+		width: auto;
+	}
+
+	section#management .fx-4:nth-of-type(3n+2) .team-box-detail, section#management .fx-4:nth-of-type(3n+3) .team-box-detail {
+		margin-left: 0;
 	}
 }
 
