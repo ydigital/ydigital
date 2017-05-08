@@ -29,6 +29,68 @@ section#technology-slide {
 	}
 }
 
+section#strategy-slide {
+	background-image: url($root + '/image/technology.jpg');
+
+	&.slide-with-gradient:before {
+		content: ' ';
+	    top: 0;
+	    left: 0;
+	    opacity: .8;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background-image: linear-gradient(to right, #363636, #862c36);
+	    z-index: 1;
+	}
+
+	.banner-text {
+		p {
+			font-size: 1.2em;
+			> span {
+				color: $textRed;
+			}
+		}
+		h2 {
+			font-size: 2.5em;
+			&.with-half-border-bottom.border-bottom-yellow:before {
+				background-color: $textRed;
+			}
+		}
+	}
+}
+
+section#marketing-slide {
+	background-image: url($root + '/image/technology.jpg');
+
+	&.slide-with-gradient:before {
+		content: ' ';
+	    top: 0;
+	    left: 0;
+	    opacity: .8;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background-image: linear-gradient(to right, #363636, #3f5d1d);
+	    z-index: 1;
+	}
+
+	.banner-text {
+		p {
+			font-size: 1.2em;
+			> span {
+				color: $textGreen;
+			}
+		}
+		h2 {
+			font-size: 2.5em;
+			&.with-half-border-bottom.border-bottom-yellow:before {
+				background-color: $textGreen;
+			}
+		}
+	}
+}
+
 .box-technology {
 	border: 1px solid #ddd;
 	background-color: #e8eaeb;
@@ -50,6 +112,38 @@ section#technology-slide {
 	}
 }
 
+body.strategy-page {
+	.top-box-technology {
+		h2 {
+			color: $textRed;
+		}
+	}
+
+	.cblue {
+		color: $textRed;
+	}
+
+	.btn-cta-blue {
+		background-color: $textRed;
+	}
+}
+
+body.marketing-page {
+	.top-box-technology {
+		h2 {
+			color: $textGreen;
+		}
+	}
+
+	.cblue {
+		color: $textGreen;
+	}
+
+	.btn-cta-blue {
+		background-color: $textGreen;
+	}
+}
+
 .down-box-technology {
 	padding: 45px 30px;
 	min-height: 200px;
@@ -67,7 +161,7 @@ section.__other {
 }
 
 @media screen and (max-width: 576px){
-	section#technology-slide {
+	section.slide-banner-full-width {
 		.fx-6 {
 			max-width: 100%;
 		}

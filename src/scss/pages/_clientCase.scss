@@ -1,0 +1,30 @@
+section#client-case-slide {
+	background-image: url($root + '/image/technology.jpg');
+
+	&.slide-with-gradient:before {
+		content: ' ';
+	    top: 0;
+	    left: 0;
+	    opacity: .8;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background-image: linear-gradient(to right, #263529, #768528);
+	    z-index: 1;
+	}
+
+	.banner-text {
+		p {
+			font-size: 1.2em;
+			> span {
+				color: $textColor;
+			}
+		}
+		h2 {
+			font-size: 2.5em;
+			&.with-half-border-bottom.border-bottom-yellow:before {
+				background-color: $textColor;
+			}
+		}
+	}
+}

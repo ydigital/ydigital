@@ -11,6 +11,19 @@ var menuWrapper = document.querySelector('.menu-wrapper');
 var menuCloseIcon = document.getElementById('gnb_svg_close');
 var overlayMenu = document.querySelector('.__overlay');
 
+var Instafeed = require("instafeed.js");
+
+var userFeed = new Instafeed({
+	get: 'user',
+	userId: '299376278',
+	accessToken: '299376278.68ace84.b4665956ceb14d4e9d8ff6f997c704b3',
+	resolution: 'thumbnail'
+	// limit: '5',
+	// template: '<a href="{{link}}" target="_blank" id={{id}}><img src="{{image}}" /><div class="footer">{{caption}}</div><div class="user"><img src="{{model.user.profile_picture}}"/><span>{{model.user.username}}</span></div></a>'
+});
+
+userFeed.run();
+
 menuCloseIcon.addEventListener('click', () => {
 	menuWrapper.classList.remove('menu-wrapper-show');
 	setTimeout(() => {
@@ -85,6 +98,8 @@ overlayShow.addEventListener('click', () => {
 // 	});
 // }
 
+
+
 function removeAllClass(elName, removedClass){
 	var cName = document.querySelectorAll(elName);
 	for(var i = 0;i < cName.length; ++i){
@@ -133,6 +148,22 @@ for(var i = 0;i < teamBoxBig.length; ++i){
 		}
 	});
 }
+
+var filterDropdown = document.querySelectorAll('.post-filter-box');
+
+for(var i=0;i<filterDropdown.length;++i){
+	filterDropdown[i].addEventListener('click', function(){
+		var filterList = this.querySelector('.filter-list');
+		if(!filterList.classList.contains('filter-open')){
+			removeAllClass('.filter-list','filter-open');
+			filterList.classList.add('filter-open');
+		} else {
+			filterList.classList.remove('filter-open');
+		}
+	});
+}
+
+
 
 
 // GSAP

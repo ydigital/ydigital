@@ -2,6 +2,7 @@
 @import 'base/color';
 @import 'vendor/flex';
 @import 'vendor/font-awesome/font-awesome';
+@import 'vendor/owlCarousel';
 @import 'layout/header';
 @import 'layout/home-slide';
 @import 'layout/tiles';
@@ -24,3 +25,8 @@
 @import 'pages/insightDetail';
 @import 'pages/teamPage';
 @import 'pages/technologyPage';
+@import 'pages/httpStatus';
+@import 'pages/insightPage';
+@import 'pages/clientCase';
+@import 'pages/clientDetail';
+@import 'pages/aboutPage';

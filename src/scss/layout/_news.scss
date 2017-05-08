@@ -97,6 +97,10 @@ section#news {
 	p {
 		text-transform: uppercase;
 		font-size: 14px;
+
+		> span {
+			font-size: 11px;
+		}
 	}
 }
 
