@@ -597,6 +597,30 @@ section#client-partner {
 	}
 }
 
+#instafeed {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ig-img-container {
+	flex: 0 0 10%;
+	max-width: 10%
+}
+
+@media screen and (max-width: 768px){
+	.ig-img-container {
+		flex: 0 0 20%;
+		max-width: 20%
+	}
+}
+
+@media screen and (max-width: 576px){
+	.ig-img-container {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+}
+
 
 
 

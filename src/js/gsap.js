@@ -15,11 +15,10 @@ var Instafeed = require("instafeed.js");
 
 var userFeed = new Instafeed({
 	get: 'user',
-	userId: '299376278',
-	accessToken: '299376278.68ace84.b4665956ceb14d4e9d8ff6f997c704b3',
-	resolution: 'thumbnail'
-	// limit: '5',
-	// template: '<a href="{{link}}" target="_blank" id={{id}}><img src="{{image}}" /><div class="footer">{{caption}}</div><div class="user"><img src="{{model.user.profile_picture}}"/><span>{{model.user.username}}</span></div></a>'
+	userId: '1975548372',
+	accessToken: '1975548372.6932eed.94c94a502edd4596924d89a8a10a382d',
+	resolution: 'thumbnail',
+	template: '<div class="ig-img-container"><a href="{{link}}" target="_blank" id={{id}}><img src="{{image}}" /></a></div>'
 });
 
 userFeed.run();
