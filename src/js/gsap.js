@@ -41,6 +41,14 @@ window.onload = function(){
 	}, 500);
 }
 
+var journeyLoadMore = document.querySelector('.btn-load-more-journey');
+var journeyPathVertical = document.querySelector('.journey-path-vertical');
+
+
+journeyLoadMore.addEventListener('click', function(){
+	journeyPathVertical.classList.add('__more');
+});
+
 menu.onclick = function(){
 	// if(menu.classList != 'menu-open'){
 	// 	this.classList.add('menu-open');

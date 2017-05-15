@@ -6255,13 +6255,23 @@ section#client-partner .partner-owl-img-container {
 
 .journey-path-vertical {
   display: none;
-  max-height: 350px; }
+  max-height: 350px;
+  overflow: hidden; }
+
+.load-more {
+  display: none;
+  margin-top: 3em;
+  text-align: center; }
 
 @media screen and (max-width: 768px) {
   .journey-path {
     display: none; }
   .journey-path-vertical {
-    display: block; } }
+    display: block; }
+  .load-more {
+    display: block; }
+  .journey-path-vertical.__more {
+    max-height: 100%; } }
 
 .path-line {
   position: relative; }

@@ -450,6 +450,13 @@ section#client-partner {
 .journey-path-vertical {
 	display: none;
 	max-height: 350px;
+	overflow: hidden;
+}
+
+.load-more {
+	display: none;
+	margin-top: 3em;
+	text-align: center;
 }
 
 @media screen and (max-width: 768px){
@@ -459,6 +466,16 @@ section#client-partner {
 
 	.journey-path-vertical {
 		display: block;
+	}
+
+	.load-more {
+		display: block;
+	}
+
+	.journey-path-vertical {
+		&.__more {
+			max-height: 100%;
+		}
 	}
 }
 
