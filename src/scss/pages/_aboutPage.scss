@@ -130,6 +130,10 @@ section#purpose {
 	}
 }
 
+.client-owl-img {
+	margin-bottom: 3em;
+}
+
 section#client-partner {
 	h1 {
 		margin-bottom: 2em;
@@ -640,12 +644,38 @@ section#client-partner {
 		flex: 0 0 20%;
 		max-width: 20%
 	}
+
+	.client-owl-img {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.will-nowrap {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+	}
+
+	.will-nowrap {
+		.fx-2 {
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+	}
 }
 
 @media screen and (max-width: 576px){
 	.ig-img-container {
 		flex: 0 0 25%;
 		max-width: 25%;
+	}
+
+	.will-nowrap {
+		.fx-2 {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
 	}
 }
 

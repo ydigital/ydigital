@@ -63,9 +63,8 @@ menu.onclick = function(){
 }
 
 var journey = document.getElementById('journey');
-var scrollAreaJourney = journey.getBoundingClientRect().top;
+
 var journeyLine = document.querySelectorAll('.journey-path-line');
-console.log(scrollAreaJourney);
 
 var headerDOM = document.querySelector('header');
 
@@ -174,6 +173,7 @@ for(var i=0;i<filterDropdown.length;++i){
 		}
 	});
 }
+
 
 var journeyLoadMore = document.querySelector('.btn-load-more-journey');
 var journeyPathVertical = document.querySelector('.journey-path-vertical');
