@@ -22,15 +22,16 @@ section#about {
 .about-title {
 
 	h2 {
-		font-size: 2.5em;
+		font-size: 2em;
 	}
 }
 
 .about-desc {
 	
 	p {
-		font-size: 1.5em;
+		font-size: 1.3em;
 		font-weight: 300;
+		line-height: 1.5;
 
 		span {
 			border-bottom: 2px solid $btnYellowColor;

@@ -11,10 +11,11 @@ section#random-content {
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 	height: 380px;
 	padding-left: 8em;
 	padding-right: 8em;
+	padding-bottom: 2.5em;
 }
 
 .random-content-left {
@@ -73,7 +74,8 @@ section#random-content {
 	position: relative;
 	z-index: 2;
 	p {
-		font-size: 12px;
+		font-size: 1em;
+		margin: 0;
 		font-weight: 300;
 	}
 }
@@ -87,6 +89,20 @@ section#random-content {
 @media screen and (max-width: 768px){
 	.the-content-left-title h4 {
 		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.random-content-left, .random-content-right {
+		padding-right: 30px;
+		padding-left: 30px;
+		align-items: center;
+		padding-bottom: 0;
+	}
+	.the-content-left-text {
+		p {
+			font-size: 1em;
+		}
 	}
 }
 
