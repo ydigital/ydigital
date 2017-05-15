@@ -78,6 +78,18 @@ section#insight2 {
 	}
 }
 
+@media screen and (max-width: 576px){
+	.fx-with-gradient {
+		padding: 0 15px;
+	}
+	body.full-news .news-box-container .news-box-content-container {
+		padding: 40px 15px;
+	}
+	body.full-news .news-box-title h4 {
+		font-size: 2em;
+	}
+}
+
 .left-ar {
 	position: relative;
 	&:before {

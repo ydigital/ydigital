@@ -50,6 +50,10 @@ section#content-insight {
 	p {
 		font-weight: 300;
 	}
+
+	ul {
+		list-style: disc outside none;
+	}
 }
 
 .taxonomy-item {
@@ -121,6 +125,11 @@ section#content-insight {
 
 .facebook-icon {
 	background-color: $facebookBgColor;
+	color: #fff;
+}
+
+.ig-icon {
+	background-color: $igBgColor;
 	color: #fff;
 }
 

@@ -35,10 +35,6 @@ section#about-slide {
 	margin-bottom: 1.9em;
 	cursor: pointer;
 
-	&:hover {
-		animation: move-bottom-arrow 1s linear infinite;
-	}
-
 	&.team-box-big {
 		min-height: 300px;
 	}

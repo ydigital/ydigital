@@ -62,6 +62,11 @@ menu.onclick = function(){
 	TweenMax.staggerFrom('.menu-item', .3, {scale:0.5, opacity:0, delay: .5, color:'#edbf29'}, .1);
 }
 
+var journey = document.getElementById('journey');
+var scrollAreaJourney = journey.getBoundingClientRect().top;
+var journeyLine = document.querySelectorAll('.journey-path-line');
+console.log(scrollAreaJourney);
+
 var headerDOM = document.querySelector('header');
 
 window.addEventListener('scroll', function() {
@@ -71,6 +76,14 @@ window.addEventListener('scroll', function() {
 	} else if(wScroll < 50) {
 		headerDOM.classList.remove('scrolled');
 	}
+
+	if(wScroll > 1150){
+		TweenMax.to('.line-1', 0.5, {scale:1, opacity:1, backgroundColor: '#a1a1a1', ease: Sine.easeOut});
+		TweenMax.to('.line-2', 0.5, {scale:1, opacity:1, delay: 0.2, backgroundColor: '#e8e1d7', ease: Sine.easeOut});
+		TweenMax.to('.line-3', 0.5, {scale:1, opacity:1, delay: 0.4, backgroundColor: '#e8e1d7', ease: Sine.easeOut});
+		TweenMax.to('.line-5', 0.5, {scale:1, opacity:1, delay: 0.6, backgroundColor: '#d7d6d5', ease: Sine.easeOut});
+		TweenMax.to('.line-4', 0.5, {scale:1, opacity:1, delay: 0.8, backgroundColor: '#faec27', ease: Sine.easeOut});
+	} 
 });
 
 var overlayShow = document.querySelector('.__overlay');

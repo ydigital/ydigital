@@ -181,6 +181,22 @@ section.__other {
 			width: auto;
 		}
 	}
+	body.marketing-page .fx-7, body.marketing-page .fx-5 {
+		max-width: 100%;
+	}
+
+	body.strategy-page .fx-7, body.strategy-page .fx-5 {
+		max-width: 100%;
+	}
+
+	.top-box-technology {
+		min-height: auto;
+		padding-bottom: 15px;
+	}
+	.down-box-technology {
+		min-height: auto;
+		padding: 20px 30px;
+	}
 }
 
 

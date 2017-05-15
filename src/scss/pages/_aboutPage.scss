@@ -21,7 +21,7 @@ section#about-slide {
 	position: relative;
 
 	&.yellow {
-		background-image: url($root + '/image/worker.png');
+		// background-image: url($root + '/image/worker.png');
 
 		&::before {
 			content: ' ';
@@ -37,7 +37,7 @@ section#about-slide {
 	}
 
 	&.brown {
-		background-image: url($root + '/image/migme.png');
+		// background-image: url($root + '/image/migme.png');
 
 		&::before {
 			content: ' ';
@@ -199,7 +199,6 @@ section#client-partner {
 
 .partner-list-container {
 	margin-top: 5em;
-	float: left;
 	.partner-owl-img {
 		max-width: 180px;
 	}
@@ -253,11 +252,13 @@ section#client-partner {
 		top: 0;
 		width: 50%;
 		height: 5px;
-		background-color: #a1a1a1;
+		// background-color: #a1a1a1;
+		background-color: transparent;
 
 		&.other-half {
 			left: 50%;
-			background-color: #e8e1d7;
+			// background-color: #e8e1d7;
+			background-color: transparent;
 			margin-top: -5px;
 		}
 	}
@@ -268,7 +269,8 @@ section#client-partner {
 		right: 0;
 		width: 5px;
 		height: 350px;
-		background-color: #e8e1d7;
+		// background-color: #e8e1d7;
+		background-color: transparent;
 	}
 
 	.journey-path-bottom {
@@ -277,11 +279,13 @@ section#client-partner {
 		left: 0;
 		width: 50%;
 		height: 5px;
-		background-color: $textColor;
+		// background-color: $textColor;
+		background-color: transparent;
 
 		&.other-half {
 			left: 50%;
-			background-color: #d7d6d5;
+			// background-color: #d7d6d5;
+			background-color: transparent;
 			margin-top: -5px;
 		}
 	}
@@ -445,6 +449,7 @@ section#client-partner {
 
 .journey-path-vertical {
 	display: none;
+	max-height: 350px;
 }
 
 @media screen and (max-width: 768px){
@@ -605,6 +610,12 @@ section#client-partner {
 .ig-img-container {
 	flex: 0 0 10%;
 	max-width: 10%
+}
+
+.journey-path-line {
+	transform: scale(0);
+	opacity: 0;
+	background-color: transparent;
 }
 
 @media screen and (max-width: 768px){
