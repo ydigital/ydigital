@@ -94,9 +94,27 @@ p.fw-300 {
 	padding-bottom: 0 !important;
 }
 
+.no-pt {
+	padding-top: 0 !important;
+}
+
 .add-mtb {
 	margin-bottom: 3em;
 	margin-top: 3em;
+}
+
+.mobile-only {
+	display: none;
+}
+
+.add-mt {
+	margin-top: 3em;
+}
+
+@media screen and (max-width: 576px){
+	.mobile-only {
+		display: block;
+	}
 }
 
 

@@ -132,6 +132,32 @@ section#purpose {
 
 .client-owl-img {
 	margin-bottom: 3em;
+	cursor: pointer;
+
+	img {
+		filter: grayscale(1);
+		transition: all .2s ease-in-out;
+	}
+
+	&:hover {
+		img {
+			filter: grayscale(0);
+		}
+	}
+}
+
+@media screen and (max-width: 576px){
+	.client-owl-img {
+		img {
+			filter: grayscale(0);
+		}
+
+		&:hover {
+			img {
+				filter: grayscale(0);
+			}
+		}
+	}
 }
 
 section#client-partner {
@@ -453,7 +479,7 @@ section#client-partner {
 
 .journey-path-vertical {
 	display: none;
-	max-height: 350px;
+	max-height: 330px;
 	overflow: hidden;
 }
 

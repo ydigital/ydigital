@@ -135,6 +135,7 @@ section#rockstar {
 	p {
 		font-weight: 300;
 		line-height: 1.4;
+		font-size: 1.2em;
 
 		> span {
 			color: $textColor;
@@ -259,6 +260,12 @@ section#instagram {
 	p {
 		line-height: 1.4;
 		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.team-box-detail-desc {
+		margin-left: 0;
 	}
 }
 
@@ -417,8 +424,11 @@ section#management {
 		margin-bottom: 1em;
 	}
 	section#rockstar {
+		padding-top: 7em;
+		padding-bottom: 7em;
 		.col-fx {
 			display: flex;
+			min-height: auto;
 		}
 		.fx {
 			flex: 0 0 100%;
@@ -429,6 +439,13 @@ section#management {
 		.ig-thum {
 			width: 25%;
 		}
+	}
+
+	.team-box-small-container {
+		display: none;
+	}
+	.team-box-small-container.team-box-block {
+		display: block;
 	}
 }
 

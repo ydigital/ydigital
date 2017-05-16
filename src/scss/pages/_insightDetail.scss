@@ -231,6 +231,7 @@ section#content-insight {
 	margin-bottom: 2em;
 }
 
+
 .related-taxonomy {
 	flex: 1;
 }
@@ -313,6 +314,24 @@ section#related-post {
 	.sidebar-insight {
 		margin-top: 5em;
 	}
+	.related-content-list {
+		display: block;
+	}
+	.related-list-thumbnail {
+		margin-right: 1em;
+	    height: 120px;
+	    max-width: 40%;
+	    float: left;
+	}
+	.cat-date {
+		font-size: 12px;
+	}
+	.taxonomy-excerpt {
+		h3 {
+			font-size: 1.3em;
+			margin-top: 5px;
+		}
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -335,12 +354,9 @@ section#related-post {
 		}
 	}
 	.related-list-thumbnail {
-		max-width: 100%;
-		
 		margin-bottom: 1em;
 	}
 	.related-content-list {
-		display: block;
 		margin-bottom: 5em;
 	}
 }

@@ -1,6 +1,8 @@
 import {TweenMax, Power2, TimelineLite} from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 
+// MENU BEHAVE
+
 var menu = document.getElementById('gnb_svg');
 var menuRow1 = document.getElementById('gnb_svg_row_1');
 var menuRow2 = document.getElementById('gnb_svg_row_2');
@@ -11,18 +13,6 @@ var menuWrapper = document.querySelector('.menu-wrapper');
 var menuCloseIcon = document.getElementById('gnb_svg_close');
 var overlayMenu = document.querySelector('.__overlay');
 
-var Instafeed = require("instafeed.js");
-
-var userFeed = new Instafeed({
-	get: 'user',
-	userId: '1975548372',
-	accessToken: '1975548372.6932eed.94c94a502edd4596924d89a8a10a382d',
-	resolution: 'thumbnail',
-	template: '<div class="ig-img-container"><a href="{{link}}" target="_blank" id={{id}}><img src="{{image}}" /></a></div>'
-});
-
-userFeed.run();
-
 menuCloseIcon.addEventListener('click', () => {
 	menuWrapper.classList.remove('menu-wrapper-show');
 	setTimeout(() => {
@@ -30,16 +20,6 @@ menuCloseIcon.addEventListener('click', () => {
 	}, 350);
 	overlayMenu.style.backgroundColor = 'transparent';
 });
-
-var preload = document.querySelector('.preload');
-
-window.onload = function(){
-	setTimeout(() => {
-		TweenMax.from(document.body, 1, {opacity:'0'})
-		TweenMax.to(document.body, 1, {opacity:'1'})
-		preload.classList.add('hide');
-	}, 500);
-}
 
 menu.onclick = function(){
 	// if(menu.classList != 'menu-open'){
@@ -61,6 +41,42 @@ menu.onclick = function(){
 	}, 200);
 	TweenMax.staggerFrom('.menu-item', .3, {scale:0.5, opacity:0, delay: .5, color:'#edbf29'}, .1);
 }
+
+// END MENU BEHAVE
+
+// PRELOAD BEHAVE
+
+var preload = document.querySelector('.preload');
+
+window.onload = function(){
+	setTimeout(() => {
+		TweenMax.from(document.body, 1, {opacity:'0'})
+		TweenMax.to(document.body, 1, {opacity:'1'})
+		preload.classList.add('hide');
+	}, 500);
+}
+
+// END PRELOAD BEHAVE
+
+// IG BEHAVE
+
+var Instafeed = require("instafeed.js");
+
+var userFeed = new Instafeed({
+	get: 'user',
+	userId: '1975548372',
+	accessToken: '1975548372.6932eed.94c94a502edd4596924d89a8a10a382d',
+	resolution: 'thumbnail',
+	template: '<div class="ig-img-container"><a href="{{link}}" target="_blank" id={{id}}><img src="{{image}}" /></a></div>'
+});
+
+var instafeedId = document.getElementById('instafeed');
+
+if(instafeedId) userFeed.run()
+
+// END IG BEHAVE
+
+// TIMELINE AND HEADER BEHAVE
 
 var journey = document.getElementById('journey');
 
@@ -95,6 +111,9 @@ overlayShow.addEventListener('click', () => {
 	overlayMenu.style.backgroundColor = 'transparent';
 });
 
+// END TIMELINE AND HEADER BEHAVE
+
+
 // var anchor = document.getElementsByTagName('a');
 // var host = 'http://'+window.location.hostname+':3000';
 
@@ -118,6 +137,8 @@ function removeAllClass(elName, removedClass){
 	}
 }
 
+// ACCORDION BEHAVE
+
 var accordionItem = document.querySelectorAll('.accordion-item');
 
 for(var i = 0;i < accordionItem.length; ++i){
@@ -129,6 +150,10 @@ for(var i = 0;i < accordionItem.length; ++i){
 	});
 }
 
+// END ACCORDION BEHAVE
+
+
+// TAB BEHAVE
 
 var tabList = document.querySelectorAll('.tab-list');
 var cat = document.querySelectorAll('.cat');
@@ -146,6 +171,10 @@ for(var i=0;i<tabList.length;++i){
 	});
 }
 
+// END TAB BEHAVE
+
+
+// TEAM BEHAVE
 
 var teamBoxBig = document.querySelectorAll('.team-box-big');
 
@@ -159,6 +188,10 @@ for(var i = 0;i < teamBoxBig.length; ++i){
 		}
 	});
 }
+
+// END TEAM BEHAVE
+
+// FILTER BEHAVE
 
 var filterDropdown = document.querySelectorAll('.post-filter-box');
 
@@ -174,28 +207,40 @@ for(var i=0;i<filterDropdown.length;++i){
 	});
 }
 
+// END FILTER
+
+// LOAD MORE JOURNEY 
 
 var journeyLoadMore = document.querySelector('.btn-load-more-journey');
 var journeyPathVertical = document.querySelector('.journey-path-vertical');
 
 
-journeyLoadMore.addEventListener('click', function(){
-	journeyPathVertical.classList.add('__more');
-});
+if(journeyLoadMore){
+	journeyLoadMore.addEventListener('click', function(){
+		journeyPathVertical.classList.add('__more');
+	});
+}
 
+// END LOAD MORE JOURNEY
 
 
 // GSAP
 
+// ARROW DOWN LEGO BEHAVE
 var tl = new TimelineMax();
 var arrowLego = document.querySelector('.arrow-lego');
 
-tl.to(arrowLego, .5, {y:10, repeat:-1, yoyo:true, ease: Circ.easeOut});
-tl.play();
+if(arrowLego){
+	tl.to(arrowLego, .5, {y:10, repeat:-1, yoyo:true, ease: Circ.easeOut});
+	tl.play();
 
-arrowLego.addEventListener('click', () => {
-	TweenMax.to(window, 1, {scrollTo:'#tiles', ease: Circ.easeOut});
-});
+	arrowLego.addEventListener('click', () => {
+		TweenMax.to(window, 1, {scrollTo:'#tiles', ease: Circ.easeOut});
+	});
+}
+// END ARROW DOWN LEGO BEHAVE
+
+// COUNT NUMBER BEHAVE
 
 var counterNumber = document.querySelectorAll('.number-counter');
 
@@ -211,6 +256,53 @@ function animateCounter(element, start, end){
 		ease: Expo.easeInOut
 	});
 }
+
+// END COUNT NUMBER BEHAVE
+
+// LOAD MORE MEMBER
+
+var btnMemberLoadMore = document.querySelector('.btn-member-load-more');
+var teamBoxSmall = document.querySelectorAll('.team-box-small-container');
+
+if(btnMemberLoadMore){
+	for(var i = 0;i < 8; ++i){
+		teamBoxSmall[i].classList.add('team-box-block');
+	}
+
+	btnMemberLoadMore.addEventListener('click', function(){
+		var counter = 0;
+		for(var i = 0;i < teamBoxSmall.length; ++i){
+			if(teamBoxSmall[i].classList.contains('team-box-block')){
+				counter++;
+			}
+		}
+		
+		for(var i = 0;i < (counter + 4); ++i){
+			teamBoxSmall[i].classList.add('team-box-block');
+		}
+	});
+}
+
+// END LOAD MORE MEMBER
+
+// ACCORDION
+
+var boxTechnology = document.querySelectorAll('.box-technology');
+for(var i = 0;i < boxTechnology.length; ++i){
+	boxTechnology[i].addEventListener('click', function(){
+		var downBoxTechnology = this.querySelector('.down-box-technology');
+		var downArrow = this.querySelector('.top-box-arrow-down');
+		if(downBoxTechnology.classList.contains('down-box-open')){
+			downBoxTechnology.classList.remove('down-box-open');
+			downArrow.classList.remove('top-box-arrow-down-open');
+		} else {
+			downBoxTechnology.classList.add('down-box-open');
+			downArrow.classList.add('top-box-arrow-down-open');
+		}
+	});
+}
+
+// END ACCORDION
 
 
 // for(var i = 0;i < counterNumber.length; ++i){

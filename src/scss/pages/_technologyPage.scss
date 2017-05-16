@@ -99,7 +99,11 @@ section#marketing-slide {
 
 .top-box-technology {
 	padding: 30px 30px;
-	min-height: 154px;
+	min-height: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	cursor: pointer;
 
 	h2 {
 		font-size: 1.9em !important;
@@ -109,6 +113,36 @@ section#marketing-slide {
 			background-color: #fff;
 			width: 30px;
 		}
+	}
+
+	.top-box-arrow-down {
+		font-size: 1.7em;
+		color: #fff;
+		transition: all .2s cubic-bezier(0.8, 0.09, 0.51, 0.97);
+		transform: rotateX(0);
+
+		
+	}
+
+	&:hover {
+		.top-box-arrow-down {
+			animation: move-bottom-arrow 1s linear infinite;
+		}
+	}
+}
+
+@keyframes move-bottom-arrow {
+	0% {
+		transform: translateY(0px);
+	} 25% {
+		transform: translateY(5px);
+	} 50% {
+		transform: translateY(10px);
+	} 75% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0px);
 	}
 }
 
@@ -144,13 +178,35 @@ body.marketing-page {
 	}
 }
 
+// .down-box-technology {
+// 	padding: 45px 30px;
+// 	min-height: 200px;
+// 	p {
+// 		margin: 0;
+// 	}
+// }
+
 .down-box-technology {
-	padding: 45px 30px;
-	min-height: 200px;
+	min-height: 0;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .2s ease-in-out;
+	padding: 0px 30px;
+
 	p {
 		margin: 0;
 	}
 }
+
+.down-box-technology {
+	&.down-box-open {
+		padding: 45px 30px;
+		min-height: 200px;
+		max-height: 400px;
+	}
+}
+
+
 
 section.__other {
 	.btn-cta {
@@ -195,7 +251,7 @@ section.__other {
 	}
 	.down-box-technology {
 		min-height: auto;
-		padding: 20px 30px;
+		padding: 0px 30px;
 	}
 }
 

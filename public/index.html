@@ -18,6 +18,7 @@
 	<meta property="og:url" content="">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+	<script src="js/particles.min.js"></script>
 </head>
 <body class="home-page">
 	<div class="__overlay"></div>
@@ -114,7 +115,10 @@
 				</div>
 			</div>
 		</section>
-		<section id="tiles" style="background-image: url(image/bokeh.gif);">
+		<section id="tiles">
+			<div class="particle-container">
+				<div id="particles-js"></div>
+			</div>
 			<div class="col-fx tiles-2">
 				<div class="fx fact fact-1">
 					<div>
@@ -604,5 +608,10 @@
 	</div>
 	<script src="js/bundle.js"></script>
 	<script src="js/countup.js"></script>
+	<script>
+		particlesJS.load('particles-js', 'js/particlesjs-config.json', function() {
+		  console.log('callback - particles.js config loaded');
+		});
+	</script>
 </body>
 </html>

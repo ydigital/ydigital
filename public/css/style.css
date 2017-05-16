@@ -4017,9 +4017,22 @@ p.fw-300 {
 .no-pb {
   padding-bottom: 0 !important; }
 
+.no-pt {
+  padding-top: 0 !important; }
+
 .add-mtb {
   margin-bottom: 3em;
   margin-top: 3em; }
+
+.mobile-only {
+  display: none; }
+
+.add-mt {
+  margin-top: 3em; }
+
+@media screen and (max-width: 576px) {
+  .mobile-only {
+    display: block; } }
 
 img {
   max-width: 100%;
@@ -4518,7 +4531,7 @@ section#service-all p.__p {
     padding: 2em 1.5em;
     height: auto; }
     .service-full-box .service-full-box-cta .btn-cta {
-      width: auto; }
+      width: 100%; }
   section#service-slide .fx-6 {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -4945,7 +4958,19 @@ section#related-post {
   .taxonomy-item .tags ul li {
     margin-bottom: 5px; }
   .sidebar-insight {
-    margin-top: 5em; } }
+    margin-top: 5em; }
+  .related-content-list {
+    display: block; }
+  .related-list-thumbnail {
+    margin-right: 1em;
+    height: 120px;
+    max-width: 40%;
+    float: left; }
+  .cat-date {
+    font-size: 12px; }
+  .taxonomy-excerpt h3 {
+    font-size: 1.3em;
+    margin-top: 5px; } }
 
 @media screen and (max-width: 768px) {
   section#news-detail-slide .fx-8 {
@@ -4957,10 +4982,8 @@ section#related-post {
   body.insight-detail-page .col-fx {
     display: block; }
   .related-list-thumbnail {
-    max-width: 100%;
     margin-bottom: 1em; }
   .related-content-list {
-    display: block;
     margin-bottom: 5em; } }
 
 section#about-slide {
@@ -5089,7 +5112,8 @@ section#rockstar {
     font-size: 3em; }
   section#rockstar p {
     font-weight: 300;
-    line-height: 1.4; }
+    line-height: 1.4;
+    font-size: 1.2em; }
     section#rockstar p > span {
       color: #faec27; }
   section#rockstar .col-fx {
@@ -5186,6 +5210,10 @@ section#instagram {
   .team-box-detail-desc p {
     line-height: 1.4;
     font-size: 1.2em; }
+
+@media screen and (max-width: 768px) {
+  .team-box-detail-desc {
+    margin-left: 0; } }
 
 .team-box-detail {
   position: relative;
@@ -5300,17 +5328,25 @@ section#management .fx-4:nth-of-type(3n+3) .team-box-detail {
     margin-bottom: 1em; }
   .team-box {
     margin-bottom: 1em; }
-  section#rockstar .col-fx {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  section#rockstar .fx {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    max-width: 100%; }
+  section#rockstar {
+    padding-top: 7em;
+    padding-bottom: 7em; }
+    section#rockstar .col-fx {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      min-height: auto; }
+    section#rockstar .fx {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+      max-width: 100%; }
   section#instagram .ig-thum {
-    width: 25%; } }
+    width: 25%; }
+  .team-box-small-container {
+    display: none; }
+  .team-box-small-container.team-box-block {
+    display: block; } }
 
 @media screen and (max-width: 476px) {
   section#staff .fx-2 {
@@ -5401,13 +5437,50 @@ section#marketing-slide {
 
 .top-box-technology {
   padding: 30px 30px;
-  min-height: 154px; }
+  min-height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  cursor: pointer; }
   .top-box-technology h2 {
     font-size: 1.9em !important;
     color: #16dff7; }
     .top-box-technology h2.with-half-border-bottom.border-bottom-yellow:before {
       background-color: #fff;
       width: 30px; }
+  .top-box-technology .top-box-arrow-down {
+    font-size: 1.7em;
+    color: #fff;
+    -webkit-transition: all 0.2s cubic-bezier(0.8, 0.09, 0.51, 0.97);
+    transition: all 0.2s cubic-bezier(0.8, 0.09, 0.51, 0.97);
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0); }
+  .top-box-technology:hover .top-box-arrow-down {
+    -webkit-animation: move-bottom-arrow 1s linear infinite;
+            animation: move-bottom-arrow 1s linear infinite; }
+
+@keyframes move-bottom-arrow {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); }
+  25% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  75% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px); }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
 
 body.strategy-page .top-box-technology h2 {
   color: #f42d45; }
@@ -5428,10 +5501,19 @@ body.marketing-page .btn-cta-blue {
   background-color: #92db3c; }
 
 .down-box-technology {
-  padding: 45px 30px;
-  min-height: 200px; }
+  min-height: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding: 0px 30px; }
   .down-box-technology p {
     margin: 0; }
+
+.down-box-technology.down-box-open {
+  padding: 45px 30px;
+  min-height: 200px;
+  max-height: 400px; }
 
 section.__other .btn-cta {
   width: 200px;
@@ -5456,7 +5538,7 @@ section.__other .btn-cta {
     padding-bottom: 15px; }
   .down-box-technology {
     min-height: auto;
-    padding: 20px 30px; } }
+    padding: 0px 30px; } }
 
 section#server-error-slide {
   background-image: url("https://pure-sierra-23077.herokuapp.com/image/technology.jpg"); }
@@ -6038,7 +6120,24 @@ section#purpose {
     z-index: 2; }
 
 .client-owl-img {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  cursor: pointer; }
+  .client-owl-img img {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+  .client-owl-img:hover img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+
+@media screen and (max-width: 576px) {
+  .client-owl-img img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); }
+  .client-owl-img:hover img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0); } }
 
 section#client-partner h1 {
   margin-bottom: 2em; }
@@ -6262,7 +6361,7 @@ section#client-partner .partner-owl-img-container {
 
 .journey-path-vertical {
   display: none;
-  max-height: 350px;
+  max-height: 330px;
   overflow: hidden; }
 
 .load-more {
