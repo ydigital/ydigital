@@ -7,7 +7,7 @@
 	min-height: 250px;
 	text-align: center;
 	position: relative;
-	background-image: url($root + '/image/texture.png');
+	// background-image: url($root + '/image/texture.png');
 	border: 1px solid #8a8a8a;;
 	
 	// &.fact-1 {
@@ -143,6 +143,19 @@
 	.fact-text {
 		font-size: 1em;
 	}
+}
+
+section#tiles {
+	position: relative;
+}
+
+.particle-container {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 @media screen and (max-width: 578px){
